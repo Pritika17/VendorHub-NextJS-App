@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import VendorProfile from "@components/VendorProfile"
 
-const UserProfile = ({params}) => {
+const Profile = ({params}) => {
     const searchParams = useSearchParams()
     const userName = searchParams.get("name")
 
@@ -30,4 +30,4 @@ const UserProfile = ({params}) => {
     )
 }
 
-export default UserProfile
+export default Profile
