@@ -1,7 +1,7 @@
 
 import Card from "./Card"
 
-const Profile = ({name, desc, data, handleEdit, handleDelete}) => {
+const VendorProfile = ({name, desc, data, handleEdit, handleDelete}) => {
   return (
     <section className="w-full">
       <h1 className="head_text text-left">
@@ -22,4 +22,4 @@ const Profile = ({name, desc, data, handleEdit, handleDelete}) => {
   )
 }
 
-export default Profile
+export default VendorProfile

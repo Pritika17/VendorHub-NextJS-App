@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-import Profile from "@components/UserProfile";
+import VendorProfile from "@components/VendorProfile";
 
 const UserProfile = () => {
 
@@ -49,7 +49,7 @@ const UserProfile = () => {
     }
   };
   return (
-    <Profile
+    <VendorProfile
       name="My"
       desc="Welcome to your personalized profile page"
       data={profiles}

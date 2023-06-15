@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
-import Profile from "@components/UserProfile"
+import VendorProfile from "@components/VendorProfile"
 
 const UserProfile = ({params}) => {
     const searchParams = useSearchParams()
@@ -22,7 +22,7 @@ const UserProfile = ({params}) => {
     }, [params.id])
 
     return(
-        <Profile
+        <VendorProfile
             name = {userName}
             desc = {`Welcome to ${userName}'s personalized profile page.`}
             data = {userVendorProfiles}
