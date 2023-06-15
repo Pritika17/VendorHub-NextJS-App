@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-import Profile from "@components/userProfile";
+import Profile from "@components/UserProfile";
 
-const userProfile = () => {
+const UserProfile = () => {
 
   const router = useRouter()
 
@@ -59,4 +59,4 @@ const userProfile = () => {
   );
 };
 
-export default userProfile;
+export default UserProfile;
