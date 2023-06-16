@@ -17,7 +17,7 @@ const Feed = () => {
   const [profiles, setProfiles] = useState([]);
 
   const fetchProfiles = async () => {
-    const response = await fetch("api/profile");
+    const response = await fetch("/api/profile");
     const data = await response.json();
 
     setProfiles(data);
